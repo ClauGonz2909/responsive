@@ -64,8 +64,9 @@
  }
 
  @media(max-width:1024px){
-    .Marcas{
-        flex-direction: column;
+    .Contenedor-Principal .Marcas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;   
     }
     .Contenedor-Servicios{
         grid-template-columns: 1fr;   
@@ -80,6 +81,11 @@
     .Contenedor-Principal{
         background-color: blueviolet;
         color: white;
+    }
+    .Contenedor-Principal .Marcas{
+      grid-template-columns: 1fr;
+
+
     }
     
  }
